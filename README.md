@@ -13,6 +13,24 @@ instead an internal data structure is used that persists along the server instan
 
 6- Same API is used with same parameters at entry and exit of car.
 
+7- Here is the Interchanges List. 
+
+```bash
+InterchangesList = [
+    {name : 'Zero Point', distance: '0'},
+    {name : 'NS Interchange', distance: '5'},
+    {name : 'Ph4 Interchange', distance: '10'},
+    {name : 'Ferozpur Interchange', distance: '17'},
+    {name : 'Lake City Interchange', distance: '24'},
+    {name : 'Raiwand Interchange', distance: '29'},
+    {name : 'Bahria Interchange', distance: '34'},
+]
+```
+
+8- The name of interchange will follow the convention and case sensitivity while entry is made against a car. For example, entry will be made when value is 'Zero Point' while there will be error message if the value of interchange is 'zero point'.
+
+9- As per the instructions, plate number format will be XXX-000 (with a dash in between alphabets and numbers).
+
 ## Installation
 
 1 - Code can run by installing node-modules in root directory through this command:
