@@ -35,7 +35,6 @@ exports.tollBoothEntry = async (req, res) => {
                 /* We calculate the number plate digits part and determine the even and odd count digits
                 Numner Plate Format: LLL NNN, where we assume that NNN consists of Digits
                 We slice the number plate string and get only the digits part.*/
-                console.log(numberPlate.slice(4, 7))
                 const { even_count, odd_count } = numberPlateEvenOddChecking(numberPlate.slice(4, 7));
                 // Discount will be applicable if any one of the following two conditions are fulfilled
                 if ((even_count > 0 && evenNumberPlateDiscountedDays(day)) || ( odd_count > 0 && oddNumberPlateDiscountedDays(day))) {
